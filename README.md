@@ -204,6 +204,28 @@ ax.set_ylabel('Values')
 ax.set_title('Box Plot')
 ```
 ![image](https://github.com/user-attachments/assets/39210f39-f430-4760-b165-b7c69bdfef33)
+```
+import pandas as pd
+import numpy as np
+import seaborn as sns
+import matplotlib.pyplot as plt
+labels='Python','C++','Ruby','Java'
+sizes=[215,130,245,210]
+colors=['gold','yellowgreen','lightcoral','lightskyblue']
+explode=(0,0.4,0,0.5)
+plt.pie(sizes,explode=explode,labels=labels,colors=colors,autopct='%1.1f%%',shadow=True)
+plt.axis('equal')
+plt.show()
+```
+![image](https://github.com/user-attachments/assets/a616cbaa-2e94-404b-8cf0-f252d4f2ad39)
+```
+activities=['eat','sleep','work','play']
+slices=[3,7,8,6]
+colors=['r','y','g','b']
+plt.pie(slices,labels=activities,colors=colors,startangle=90,shadow=True,explode=(0,0,0.1,0),radius=1.2,autopct='%1.1f%%')
+plt.legend()
+```
+![image](https://github.com/user-attachments/assets/30e75c92-0dde-4a2f-abd1-b51d27741d2b)
 
 
 # Result:
